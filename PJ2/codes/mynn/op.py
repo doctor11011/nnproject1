@@ -40,7 +40,7 @@ class Linear(Layer):
         out: [batch_size, out_dim]
         """
         self.X=X
-        return np.dot(self.X,self.W)+self.b
+        return np.dot(self.X,self.params['W'])+self.params['b']
 
     def backward(self, grad : np.ndarray):
         """
