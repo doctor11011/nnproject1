@@ -26,7 +26,7 @@ with gzip.open(train_labels_path, 'rb') as f:
 # choose 10000 samples from train set as validation set.
 idx = np.random.permutation(np.arange(num))
 # save the index.
-with open(r'C:\Users\34846\Desktop\PJ2\codes\dataset\MNIST\idx.pickle', 'wb') as f:
+with open('idx.pickle', 'wb') as f:
         pickle.dump(idx, f)
 train_imgs = train_imgs[idx]
 train_labs = train_labs[idx]
