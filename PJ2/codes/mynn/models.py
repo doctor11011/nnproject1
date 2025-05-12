@@ -5,6 +5,7 @@ class Model_MLP(Layer):
     """
     A model with linear layers. We provied you with this example about a structure of a model.
     """
+    
     def __init__(self, size_list=None, act_func=None, lambda_list=None):
         self.size_list = size_list
         self.act_func = act_func
